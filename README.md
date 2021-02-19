@@ -45,9 +45,9 @@ and the user must "Restart" (previously titled "Start" in the menu bar).
 This project is low priority due to its purpose. Otherwise, here are the current known bugs:
 
 - [ ] Colors sometimes don't reset to their base values after lighting up
-- [X] Button gives no feedback if the button pressed is the last (correct) Color in the sequence. This 
+- [X] ~~Button gives no feedback if the button pressed is the last (correct) Color in the sequence. This 
 was to overcome the issue of there being no delay between the end of one sequence and the beginning of 
-another, which makes it difficult to identify the first color in the new sequence.
+another, which makes it difficult to identify the first color in the new sequence.~~
 
 ## License
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
