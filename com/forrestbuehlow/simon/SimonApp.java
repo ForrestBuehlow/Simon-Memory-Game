@@ -1,8 +1,6 @@
 package com.forrestbuehlow.simon;
 
 import javax.swing.*;
-import javax.swing.plaf.basic.BasicButtonUI;
-import javax.swing.plaf.metal.MetalButtonUI;
 import javax.swing.plaf.basic.*;
 
 import java.awt.Dimension;
@@ -97,11 +95,7 @@ public class SimonApp {
 			buttons[i].setBorderPainted(false);
 			buttons[i].setForeground(java.awt.Color.BLACK);
 			buttons[i].setFont(new Font("Arial", Font.BOLD, 40));
-			buttons[i].setUI(new BasicToggleButtonUI() {
-				protected java.awt.Color getDisabledTextColor() {
-					return java.awt.Color.WHITE;
-				}
-			});
+			buttons[i].setUI(new BasicToggleButtonUI());
 			panel.add(buttons[i]);
 		}
 
@@ -290,8 +284,6 @@ public class SimonApp {
 	 */
 	private static void playNewSequence() {
 		SimonApp.game.generateColor();
-
-		Color[] sequence = SimonApp.game.getSequence();
 
 		new Thread() {
 			public void run() {
