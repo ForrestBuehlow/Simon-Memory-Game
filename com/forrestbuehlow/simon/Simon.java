@@ -88,8 +88,8 @@ public class Simon {
 			return false;
 		}
 
-		Iterator thisItt = sequence.iterator();
-		Iterator otherItt = c.iterator();
+		Iterator<Color> thisItt = sequence.iterator();
+		Iterator<Color> otherItt = c.iterator();
 
 		while (thisItt.hasNext()) {
 			if (!thisItt.next().equals(otherItt.next())) {
@@ -110,8 +110,8 @@ public class Simon {
 		if (c.size() > sequence.size()) {
 			return false;
 		}
-		Iterator thisItt = sequence.iterator();
-		Iterator otherItt = c.iterator();
+		Iterator<Color> thisItt = sequence.iterator();
+		Iterator<Color> otherItt = c.iterator();
 
 		while (otherItt.hasNext()) {
 			if (!otherItt.next().equals(thisItt.next())) {
