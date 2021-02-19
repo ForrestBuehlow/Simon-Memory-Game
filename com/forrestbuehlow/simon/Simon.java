@@ -17,7 +17,7 @@ public class Simon {
 	 * NORMAL - A continuous sequence of colors are generated in random order
 	 * SHRINK - Like normal, but with no duplicate pairs in the sequence.
 	 * 
-	 * @see com.forrestbuehlow.Color for the supported colors in this iteration
+	 * @see com.forrestbuehlow.simon.Color for the supported colors in this iteration
 	 */
 	public enum Mode {
 		NORMAL, // Next instruction in sequence is random
@@ -30,7 +30,7 @@ public class Simon {
 	 * NORMAL - A continuous sequence of colors are generated in random order
 	 * SHRINK - Like normal, but with no duplicate pairs in the sequence.
 	 * 
-	 * @see com.forrestbuehlow.Color for the supported colors in this iteration
+	 * @see com.forrestbuehlow.simon.Color for the supported colors in this iteration
 	 */
 	private Mode mode;
 
