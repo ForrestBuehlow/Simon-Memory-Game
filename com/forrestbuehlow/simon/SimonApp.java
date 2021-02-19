@@ -291,6 +291,7 @@ public class SimonApp {
 				Color[] sequence = SimonApp.game.getSequence();
 				// System.out.println(java.util.Arrays.toString(sequence));
 				try {
+					Thread.sleep(500);
 					for (Color s : sequence) {
 						int i = 0;
 						switch (s) {
