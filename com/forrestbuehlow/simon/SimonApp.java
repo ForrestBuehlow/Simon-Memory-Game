@@ -181,10 +181,7 @@ public class SimonApp {
 				if (b.isEnabled()) {
 					enableAllComponents(false);
 					playerInput.add(Color.valueOf(b.getName()));
-
-					if (playerInput.size() != game.sequenceLength()) {
-						spawnButtonThread(b);
-					}
+					spawnButtonThread(b);
 					validateInput();
 
 					enableAllComponents(true);
