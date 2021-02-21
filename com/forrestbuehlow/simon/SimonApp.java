@@ -100,11 +100,11 @@ public class SimonApp {
 		}
 
 		// Set button colors & names
-		resetColors(); // Sets colors for buttons 0, 1, 2, 3
 		buttons[0].setName(Color.VERMILLION.toString());
 		buttons[1].setName(Color.BLUISH_GREEN.toString());
 		buttons[2].setName(Color.YELLOW.toString());
 		buttons[3].setName(Color.BLUE.toString());
+		resetColors(); // Sets colors for buttons, buttons must have name must not be null
 
 		// Set Button listeners
 		for (int i = 0; i < buttons.length; i++) {
@@ -327,10 +327,14 @@ public class SimonApp {
 	 * this a required component of the code
 	 */
 	private static void resetColors() {
-		buttons[0].setBackground(new java.awt.Color(213, 94, 0)); 
-		buttons[1].setBackground(new java.awt.Color(0, 158, 115));
-		buttons[2].setBackground(new java.awt.Color(240, 228, 66));
-		buttons[3].setBackground(new java.awt.Color(0, 114, 178));
+
+		for (int i = 0; i < buttons.length; i++) {
+			if (buttons[i].getName() != null) {
+				Color c = Color.valueOf(buttons[i].getName());
+				buttons[i].setBackground(c.getColor());
+			}
+		}
+
 	}
 
 	public static void main(String[] args) {
